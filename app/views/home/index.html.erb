@@ -11,11 +11,10 @@
             <h4 class="my-0 font-weight-normal"><i class="fa fa-btc" aria-hidden="true"></i> <i class="fa fa-arrow-circle-right" aria-hidden="true"></i> <i class="fa fa-gbp" aria-hidden="true"></i> / <i class="fa fa-usd" aria-hidden="true"></i>  </h4>
           </div>
           <div class="card-body">
-            <h2 class="card-title pricing-card-title">34</h2>
+            <h2 class="card-title pricing-card-title"><i class="fa fa-gbp" aria-hidden="true"></i><%= @coindesk ["bpi"]["GBP"]["rate_float"]%></h2>
+            <h2 class="card-title pricing-card-title"><i class="fa fa-usd" aria-hidden="true"></i><%= @coindesk ["bpi"]["USD"]["rate_float"] %></h2>
             <ul class="list-unstyled mt-3 mb-4">
-              <li></li>
-              <li></li>
-
+              <li>Updated: <%= @coindesk ["time"]["updateduk"] %></li>
             </ul>
           </div>
         </div>
@@ -38,6 +37,3 @@
        <span class="text-muted">Powered by <%= link_to "Coindesk", "https://www.coindesk.com/price/", :target => "_blank" %>,</span>
      </div>
    </footer>
-
-
-<%= @coindesk %>
