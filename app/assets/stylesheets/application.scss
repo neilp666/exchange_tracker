@@ -1,1 +1,59 @@
+$highlight_1: #fd7473;  // Red Colour
+$highlight_2: #fec951;  // Yellow Colour
+$highlight_3: #47b8e0;  // Blue Colour
+$highlight_4: #9f68d0;  // Purple Colour
+
 @import "bootstrap";
+
+h1 {
+font-family: 'Roboto', sans-serif;
+//font-family: 'Lato', sans-serif;
+//font-family: 'Open Sans', sans-serif;
+//font-family: 'Raleway', sans-serif;
+}
+
+p {
+  font-family: 'Lato', sans-serif;
+}
+
+
+
+.border {
+  height: 6px;
+  border: 0;
+  background-color: $highlight_1;
+  background-image:
+        linear-gradient(
+          to right,
+          $highlight_1,
+          $highlight_1 25%,
+          $highlight_2 25%,
+          $highlight_2 50%,
+          $highlight_2 50%,
+          $highlight_3 75%,
+          $highlight_4 75%,
+          $highlight_4 100%,
+          $highlight_4 100%
+          );
+}
+
+html {
+  font-size: 14px;
+}
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.container {
+  max-width: 960px;
+}
+
+.pricing-header {
+  max-width: 700px;
+}
+
+.card-deck .card {
+  min-width: 220px;
+}
